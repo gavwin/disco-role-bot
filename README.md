@@ -5,6 +5,7 @@ This is a downloadable "disco role" discord bot. It changes the color of a certa
 ### **As you may know, there are ratelimits to about everything on discord. Therefor, you COULD GET BANNED FOR RUNNING THE BOT BECAUSE THE DISCORD API MAY NOT LIKE THE CONSTANT ROLE COLOR CHANGE.**
 #### I am **NOT** responsible for what happens after you run this bot.
 
+
 ## Steps to use bot:
 #### 1. Install the latest version of Node.js on your computer at https://nodejs.org. To check that it is installed open cmd prompt (if on windows), or open terminal (if on linux or mac) and run the command, ```node -v```. If you get a response simmilar to, ```v6.9.4```, you are good to go.
 
