@@ -1,5 +1,5 @@
 # disco-role-bot
-This is a downloadable "disco role" discord bot. It changes the color of a certain role repeatedly for a configurable amount of milliseconds, or changes the role color everytime someone sends a message.
+This is a downloadable version of my "disco-role" discord bot. It changes the color of a certain role either every set amount of milliseconds.
 
 # **RUN THIS BOT AT YOUR OWN RISK!!!**
 ### **As you may know, there are ratelimits to about everything on discord. Therefor, you COULD GET BANNED FOR RUNNING THE BOT BECAUSE THE DISCORD API MAY NOT LIKE THE CONSTANT ROLE COLOR CHANGE.**
