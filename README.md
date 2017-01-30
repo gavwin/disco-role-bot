@@ -27,12 +27,13 @@ The file looks like this:
   "allowedUser3" : "someone else's user id who should be able to use the bot goes here"
 }
 ```
-For "token" replace "Bot token goes here" with your bot token from the bot application you created.
-For "ms" either keep it at "500" or change it to whatever speed you like.
-For "roleToDisco" replace it with the role you wawnt to disco.
-For "prefix" either change it to whatever you want or keep it.
-For "allowedUser" put your discord user ID.
-For "allowedUser2" and "allowedUser3" replace it with the user id of anyone else besides you that should be able to start and stop the disco role.
+
+#### For "token" replace "Bot token goes here" with your bot token from the bot application you created.
+#### For "ms" either keep it at "500" or change it to whatever speed you like.
+#### For "roleToDisco" replace it with the role you wawnt to disco.
+#### For "prefix" either change it to whatever you want or keep it.
+#### For "allowedUser" put your discord user ID.
+#### For "allowedUser2" and "allowedUser3" replace it with the user id of anyone else besides you that should be able to start and stop the disco role.
 
 #### 6. Run the bot. Open cmd prompt (if on windows), or open terminal (if on linux or mac) and run the command, ```node Desktop/Bot```. It should then say ```Disco role bot online! Created by i am toast.```. If it doesn't say this, try running, ```cd ~``` then run, ```cd Desktop/Bot```, then run, ```node bot.js```. If that does not work, then locate where your Bot folder is and navigate to that folder in terminal / cmd prompt.
 
