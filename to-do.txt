@@ -1,0 +1,2 @@
+Add || allowedUser2 and || allowedUser3 to permissions for start and stop disco in bot.js
+Then update media fire js file with that.
