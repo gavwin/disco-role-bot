@@ -18,7 +18,8 @@ This is a downloadable "disco role" discord bot. It changes the color of a certa
 ### 5. Go to the config.json file and configure the bot so it works for your server.
 #### The file looks like this: 
 
-```{
+```
+{
   "token" : "Bot token goes here",
   "ms" : 500,
   "roleToDisco" : "Role to disco goes here",
