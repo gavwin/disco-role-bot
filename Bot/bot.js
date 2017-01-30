@@ -1,8 +1,7 @@
 "use strict";
 
 const Discord = require('discord.js');
-const randomColor = require('randomcolor');
-const config = require('./bot/config.json');
+var config = require('./config.json');
 const disco = new Discord.Client();
 const prefix = config.prefix;
 
@@ -13,32 +12,32 @@ disco.on("ready", function() {
 
 disco.on("message", message => {
 
+  function discoRole() {
+    let role = message.guild.roles.find("name", config.roleToDisco);
+    var random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    role.edit({color: random}).catch(e => {
+      return message.channel.sendMessage(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
+    });
+  }
+
   if(message.content.startsWith(prefix + "startdisco")) {
-    if(message.author.id === '193378071141810176' | message.author.id === '144228394324721665') {
-    let ms = message.content.replace(prefix + "disco", "");
-    let msInt = parseInt(ms);
-    setInterval(function(){ discoRole(); }, 420);
+    if(message.author.id === config.allowedUser) {
+    setInterval(function(){ discoRole(); }, config.ms);
     message.channel.sendMessage("```css\nDiscoing...```");
   } else {
-    message.reply(`You can't disco bro.`);
+    message.reply(`You do not have permission to disco. If you have downloaded this bot off of github please go to the config.json and add your user ID to the "allowedUsers" value.`);
   }
 }
 
 if(message.content.startsWith(prefix + "stopdisco")) {
-  if(message.author.id === '193378071141810176' | message.author.id === '144228394324721665') {
-  message.channel.sendMessage("Stopping discoing...");
+  if(message.author.id === config.allowedUser) {
+  message.channel.sendMessage("I've stopped discoing.");
   setTimeout(function() { console.log(process.exit(0)); }, 300);
 } else {
-  message.reply(`You can't disco bro.`);
+  message.reply(`You do not have permission to disco. If you have downloaded this bot off of github please go to the config.json and add your user ID to the "allowedUsers" value.`);
   }
 }
 
 });
-
-function discoRole() {
-  let role = message.guild.roles.find("name", "Toasty");
-  var random = randomColor();
-  role.edit({color: random});
-}
 
 disco.login(config.token);
