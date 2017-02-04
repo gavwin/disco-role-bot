@@ -27,7 +27,7 @@ disco.on("message", message => {
   } else {
     message.reply(`You do not have permission to disco. If you have downloaded this bot off of github please go to the config.json and add your user ID to the "allowedUsers" value.`);
   }
-}
+} else
 
 if(message.content.startsWith(prefix + "stopdisco")) {
   if(message.author.id === config.allowedUser) {
