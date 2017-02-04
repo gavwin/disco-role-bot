@@ -21,7 +21,7 @@ disco.on("message", message => {
   }
 
   if(message.content.startsWith(prefix + "startdisco")) {
-    if(message.author.id === config.allowedUser) {
+    if(message.author.id === config.allowedUser || message.author.id === config.allowedUser2 || message.author.id === config.allowedUser3) {
     setInterval(function(){ discoRole(); }, config.ms);
     message.channel.sendMessage("```css\nDiscoing...```");
   } else {
@@ -30,7 +30,7 @@ disco.on("message", message => {
 } else
 
 if(message.content.startsWith(prefix + "stopdisco")) {
-  if(message.author.id === config.allowedUser) {
+  if(message.author.id === config.allowedUser || message.author.id === config.allowedUser2 || message.author.id === config.allowedUser3) {
   message.channel.sendMessage("I've stopped discoing.");
   setTimeout(function() { console.log(process.exit(0)); }, 300);
 } else {
