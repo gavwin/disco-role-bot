@@ -13,7 +13,7 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
 
 #### 3. Make your bot application. [Here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token) is a great guide on how to. It's pretty simple.
 
-#### 4. Download the Bot folder [here](http://www.mediafire.com/file/2gfxxu301s1tjcp/Bot.zip) and extract the zip file to your **desktop**.
+#### 4. Download the Bot folder [here](https://github.com/gavwin/disco-role-bot/archive/master.zip) and extract the zip file to your **desktop**.
 
 #### 5. Go to the config.json file and configure the bot so it works for your server.
 ##### The file looks like this: 
