@@ -21,7 +21,7 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
 ```
 {
   "token" : "Bot token goes here",
-  "ms" : 500,
+  "ms" : 1500,
   "roleToDisco" : "Role to disco goes here",
   "prefix" : "d!",
   "allowedUser" : "your user id goes here",
@@ -31,7 +31,7 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
 ```
 
 ##### For "token" replace "Bot token goes here" with your bot token from the bot application you created.
-##### For "ms" either keep it at "500" or change it to whatever speed you like.
+##### For "ms" either keep it at "1500" or change it to whatever speed you like. If you set it to something larger than a minute, you won't have to worry about the rate limit issues.
 ##### For "roleToDisco" replace it with the role you wawnt to disco.
 ##### For "prefix" either change it to whatever you want or keep it.
 ##### For "allowedUser" put your discord user ID.
