@@ -1,7 +1,7 @@
 "use strict";
 
 const Discord = require('discord.js');
-var config = require('./config.json');
+const config = require('./config.json');
 const disco = new Discord.Client();
 const prefix = config.prefix;
 
@@ -24,6 +24,7 @@ disco.on("message", message => {
     if(message.author.id === config.allowedUser || message.author.id === config.allowedUser2 || message.author.id === config.allowedUser3) {
     setInterval(function(){ discoRole(); }, config.ms);
     message.channel.sendMessage("```css\nDiscoing...```");
+    message.channel.sendMessage("Please make sure you read the README, you could get IP banned from discord because of ratelimits.");
   } else {
     message.reply(`You do not have permission to disco. If you have downloaded this bot off of github please go to the config.json and add your user ID to the "allowedUsers" value.`);
   }
