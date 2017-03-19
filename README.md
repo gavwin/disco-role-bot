@@ -41,4 +41,4 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
 
 #### 7. Go to discord and start the discoing! Just type ```d!startdisco``` to start the discoing and ```d!stopdisco``` to stop the discoing!
 
-## If you have any questions or something went wrong, find me on discord with the username: i am toast#1213
+## If you have any questions or something went wrong, find me on discord with the username: i am toast#1213 or join [![](https://discordapp.com/api/guilds/208674478773895168/embed.png?style=banner2)](https://discord.me/toasty)
