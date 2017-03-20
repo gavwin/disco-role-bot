@@ -1,6 +1,6 @@
 # disco-role-bot
 This is a downloadable version of my "disco-role" discord bot. It changes the color of a certain role either every set amount of milliseconds.
-![](https://forthebadge.com/images/badges/built-with-swag.svg)
+
 # **RUN THIS BOT AT YOUR OWN RISK!!!**
 ### **As you may know, there are ratelimits to about everything on discord. Therefor, you COULD GET BANNED FOR RUNNING THE BOT BECAUSE THE DISCORD API MAY NOT LIKE THE CONSTANT ROLE COLOR CHANGE.**
 ### I am **NOT** responsible for what happens after you run this bot.
@@ -43,3 +43,8 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
 
 ## If you have any questions or something went wrong, find me on discord with the username: i am toast#1213 or join:
 [![](https://discordapp.com/api/guilds/208674478773895168/embed.png?style=banner2)](https://discord.me/toasty)
+
+### A few 100% necessary badges:
+![](https://forthebadge.com/images/badges/built-with-swag.svg)
+![](https://forthebadge.com/images/badges/kinda-sfw.svg)
+![](https://forthebadge.com/images/badges/does-not-contain-treenuts.svg)
