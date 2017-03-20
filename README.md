@@ -1,6 +1,6 @@
 # disco-role-bot
 This is a downloadable version of my "disco-role" discord bot. It changes the color of a certain role either every set amount of milliseconds.
-
+![](https://forthebadge.com/images/badges/built-with-swag.svg)
 # **RUN THIS BOT AT YOUR OWN RISK!!!**
 ### **As you may know, there are ratelimits to about everything on discord. Therefor, you COULD GET BANNED FOR RUNNING THE BOT BECAUSE THE DISCORD API MAY NOT LIKE THE CONSTANT ROLE COLOR CHANGE.**
 ### I am **NOT** responsible for what happens after you run this bot.
