@@ -6,7 +6,7 @@ const disco = new Discord.Client();
 const prefix = config.prefix;
 
 disco.on("ready", function() {
-    disco.user.setGame(`Disco Roles! Created by i am toast`);
+    disco.user.setGame(`Disco Roles! Created by i am toast#1213`);
   console.log("Disco role bot online! Created by i am toast.");
 });
 
@@ -21,8 +21,8 @@ disco.on("message", message => {
   }
 
   if(message.content.startsWith(prefix + "startdisco")) {
-    if(message.author.id === config.allowedUser || message.author.id === config.allowedUser2 || message.author.id === config.allowedUser3) {
-    setInterval(function(){ discoRole(); }, config.ms);
+    if(allowedUsers.includes(message.author.id)) {
+    setInterval(() => { discoRole(); }, config.ms);
     message.channel.sendMessage("```css\nDiscoing...```");
     message.channel.sendMessage("Please make sure you read the README, you could get IP banned from discord because of ratelimits.");
   } else {
@@ -31,9 +31,9 @@ disco.on("message", message => {
 } else
 
 if(message.content.startsWith(prefix + "stopdisco")) {
-  if(message.author.id === config.allowedUser || message.author.id === config.allowedUser2 || message.author.id === config.allowedUser3) {
+  if(allowedUsers.includes(message.author.id)) {
   message.channel.sendMessage("I've stopped discoing.");
-  setTimeout(function() { console.log(process.exit(0)); }, 300);
+  setTimeout(() => { console.log(process.exit(0)); }, 300);
 } else {
   message.reply(`You do not have permission to disco. If you have downloaded this bot off of github please go to the config.json and add your user ID to the "allowedUsers" value.`);
   }
