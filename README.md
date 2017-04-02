@@ -24,9 +24,7 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
   "ms" : 1500,
   "roleToDisco" : "Role to disco goes here",
   "prefix" : "d!",
-  "allowedUser" : "your user id goes here",
-  "allowedUser2" : "someone else's user id who should be able to use the bot goes here",
-  "allowedUser3" : "someone else's user id who should be able to use the bot goes here"
+  "allowedUser" : ["your user id goes here", "(optional) another user id goes here"]
 }
 ```
 
@@ -34,8 +32,7 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
 ##### For "ms" either keep it at "1500" or change it to whatever speed you like. If you set it to something larger than a minute, you won't have to worry about the rate limit issues.
 ##### For "roleToDisco" replace it with the role you wawnt to disco.
 ##### For "prefix" either change it to whatever you want or keep it.
-##### For "allowedUser" put your discord user ID.
-##### For "allowedUser2" and "allowedUser3" replace it with the user id of anyone else besides you that should be able to start and stop the disco role.
+##### For "allowedUser" put your discord user ID. If you want another / more user(s) to use it, add their ID's to the array. (replace "(optional) another user id goes here")
 
 #### 6. Run the bot. Open cmd prompt (if on windows), or open terminal (if on linux or mac) and run the command, ```node Desktop/Bot```. It should then say ```Disco role bot online! Created by i am toast.```. If it doesn't say this, try running, ```cd ~``` then run, ```cd Desktop/Bot```, then run, ```node bot.js```. If that does not work, then locate where your Bot folder is and navigate to that folder in terminal / cmd prompt.
 
