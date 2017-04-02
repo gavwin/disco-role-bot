@@ -3,7 +3,5 @@
   "ms" : 1500,
   "roleToDisco" : "Role to color change goes here",
   "prefix" : "d!",
-  "allowedUser" : "your user id goes here",
-  "allowedUser2" : "someone else's user id who should be able to use the bot goes here",
-  "allowedUser3" : "someone else's user id who should be able to use the bot goes here"
+  "allowedUsers" : ["your user id goes here", "(optional) another user id goes here"]
 }
