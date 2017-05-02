@@ -4,6 +4,7 @@ const Discord = require('discord.js');
 const config = require('./config.json');
 const disco = new Discord.Client();
 const prefix = config.prefix;
+const allowedUsers = config.allowedUsers;
 
 disco.on("ready", function() {
     disco.user.setGame(`Disco Roles! Created by i am toast#1213`);
