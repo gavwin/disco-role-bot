@@ -5,19 +5,22 @@ const config = require('./config.json');
 const disco = new Discord.Client();
 const prefix = config.prefix;
 const allowedUsers = config.allowedUsers;
+const roles = config.roleToDisco;
 
-disco.on("ready", function() {
+disco.on("ready", () => {
     disco.user.setGame(`Disco Roles! Created by i am toast#1213`);
-  console.log("Disco role bot online! Created by i am toast.");
+    console.log("Disco role bot online! Created by i am toast.");
 });
 
 disco.on("message", message => {
 
   function discoRole() {
     let role = message.guild.roles.find("name", config.roleToDisco);
-    var random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    role.edit({color: random}).catch(e => {
-      return message.channel.sendMessage(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
+    let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    roles.forEach((role) => {
+      role.edit({color: random}).catch(e => {
+          return message.channel.sendMessage(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
+      });
     });
   }
 
