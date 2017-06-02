@@ -15,11 +15,11 @@ disco.on("ready", () => {
 disco.on("message", message => {
 
   function discoRole() {
-    let role = message.guild.roles.find("name", config.roleToDisco);
     let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     roles.forEach((role) => {
-      role.edit({color: random}).catch(e => {
-          return message.channel.sendMessage(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
+      let theRole = message.guild.roles.find("name", role);
+      theRole.edit({color: random}).catch(e => {
+        return message.channel.sendMessage(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
       });
     });
   }
