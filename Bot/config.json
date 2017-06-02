@@ -1,7 +1,7 @@
 {
   "token" : "Bot token goes here",
   "ms" : 1500,
-  "roleToDisco" : "Role to color change goes here",
+  "roleToDisco" : ["Role to color change goes here", "(optional) another role to disco goes here"],
   "prefix" : "d!",
   "allowedUsers" : ["your user id goes here", "(optional) another user id goes here"]
 }
