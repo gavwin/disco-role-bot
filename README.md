@@ -21,10 +21,10 @@ This is a downloadable version of my "disco-role" discord bot. It changes the co
 ```
 {
   "token" : "Bot token goes here",
-  "ms" : 1500,
-  "roleToDisco" : "Role to disco goes here",
+  "ms" : 3000,
+  "roleToDisco" : ["Role to color change goes here", "(optional) another role to disco goes here"],
   "prefix" : "d!",
-  "allowedUser" : ["your user id goes here", "(optional) another user id goes here"]
+  "allowedUsers" : ["your user id goes here", "(optional) another user id goes here"]
 }
 ```
 
