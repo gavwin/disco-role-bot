@@ -8,7 +8,7 @@ const allowedUsers = config.allowedUsers;
 const roles = config.roleToDisco;
 
 disco.on("ready", () => {
-    disco.user.setGame(`Disco Roles! Created by i am toast#1213`);
+    disco.user.setPresence({ game: { name: `Disco Roles! Created by i am toast#1213` }, type: 0 });
     console.log("Disco role bot online! Created by i am toast.");
 });
 
